@@ -1,4 +1,6 @@
-FROM alpine:3.6
+FROM azul/zulu-openjdk:10
 
-RUN apk update && \
-apk add --no-cache git docker
+RUN apt-get update && \
+yes | apt-get install git curl && \
+curl -fsSL get.docker.com -o get-docker.sh && \
+sh get-docker.sh
