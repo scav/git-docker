@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk:10
+FROM openjdk:11.0.1-jre-stretch
 
 RUN apt-get update && \
 yes | apt-get install git curl && \
