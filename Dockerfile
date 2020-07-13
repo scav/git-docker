@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM docker:19.03.12
 
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
